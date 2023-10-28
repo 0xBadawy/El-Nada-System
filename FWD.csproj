@@ -2202,6 +2202,7 @@
     <Content Include="Resources\start3.bmp" />
     <Content Include="Resources\start3.png" />
     <Content Include="sea_wave_logo__3_-removebg-preview.ico" />
+    <Content Include="SystemProgress.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
