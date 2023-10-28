@@ -1,0 +1,2183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51AE7606-1D23-42FF-A9DC-DFE3E7DB689F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FWD</RootNamespace>
+    <AssemblyName>FWD</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>673B8386FF3612D2DC1470903A7AD4D837A2251B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FWD_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>prog-01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Win, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addres.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Addres.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BL\ClassMethod.cs" />
+    <Compile Include="BL\Methods.cs" />
+    <Compile Include="Class_main.cs" />
+    <Compile Include="DB_FWDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2022.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2022.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2023.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2023.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2024.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2024.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2025.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2025.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2026.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2026.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2027.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2027.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2028.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2028.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2029.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2029.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2030.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2030.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2031.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2031.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2032.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2032.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2033.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2033.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2034.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2034.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet20341.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet20341.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2037.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2037.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2041.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2041.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2042.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2042.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2044.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2044.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2047.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2047.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2048.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2048.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2049.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2049.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2050.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2050.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2052.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2052.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2053.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2053.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2055.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2055.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2056.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2056.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2057.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2057.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2058.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2058.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2060.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2060.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2062.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2062.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2063.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2063.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2065.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2065.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2066.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2066.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2080.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2080.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2081.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2081.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2083.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2083.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2084.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2084.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2086.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2086.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2088.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2088.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2089.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2089.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2090.cs">
+      <DependentUpon>DB_FWDDataSet2090.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2090.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2090.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2093.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2093.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2094.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2094.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2096.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2096.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2097.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2097.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet2098.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet2098.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FWDDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_FWDDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G_Category\Form_Cat_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Category\Form_Cat_Add.Designer.cs">
+      <DependentUpon>Form_Cat_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Category\Form_Cat_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Category\Form_Cat_List.Designer.cs">
+      <DependentUpon>Form_Cat_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Courses\Form_Courses_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Courses\Form_Courses_Add.Designer.cs">
+      <DependentUpon>Form_Courses_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Courses\Form_Courses_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Courses\Form_Courses_List.Designer.cs">
+      <DependentUpon>Form_Courses_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Courses\Form_Take_Courses_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Courses\Form_Take_Courses_Add.Designer.cs">
+      <DependentUpon>Form_Take_Courses_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Courses\Form_Take_Course_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Courses\Form_Take_Course_List.Designer.cs">
+      <DependentUpon>Form_Take_Course_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cust_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cust_Add.Designer.cs">
+      <DependentUpon>Form_Cust_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Family.Designer.cs">
+      <DependentUpon>Form_Cus_Family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Father.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Father.Designer.cs">
+      <DependentUpon>Form_Cus_Father.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Files.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Files.Designer.cs">
+      <DependentUpon>Form_Cus_Files.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Home.Designer.cs">
+      <DependentUpon>Form_Cus_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Husban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Husban.Designer.cs">
+      <DependentUpon>Form_Cus_Husban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_img.Designer.cs">
+      <DependentUpon>Form_Cus_img.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Income.Designer.cs">
+      <DependentUpon>Form_Cus_Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_List.Designer.cs">
+      <DependentUpon>Form_Cus_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Needs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Needs.Designer.cs">
+      <DependentUpon>Form_Cus_Needs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Owns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Owns.Designer.cs">
+      <DependentUpon>Form_Cus_Owns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Person.Designer.cs">
+      <DependentUpon>Form_Cus_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_cus_print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_cus_print.Designer.cs">
+      <DependentUpon>Form_cus_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Reserch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_Reserch.Designer.cs">
+      <DependentUpon>Form_Cus_Reserch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Customers\Form_Cus_View.Designer.cs">
+      <DependentUpon>Form_Cus_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Doctors\Form_Doctor_info_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Doctors\Form_Doctor_info_Add.Designer.cs">
+      <DependentUpon>Form_Doctor_info_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Doctors\Form_Parmasist_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Doctors\Form_Parmasist_Add.Designer.cs">
+      <DependentUpon>Form_Parmasist_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Donations\Form_Donation_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Donations\Form_Donation_Add.Designer.cs">
+      <DependentUpon>Form_Donation_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Donations\Form_Donner_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Donations\Form_Donner_Add.Designer.cs">
+      <DependentUpon>Form_Donner_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report.Designer.cs">
+      <DependentUpon>Form_General_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report_List.Designer.cs">
+      <DependentUpon>Form_General_Report_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report_List_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_General_Report\Form_General_Report_List_2.Designer.cs">
+      <DependentUpon>Form_General_Report_List_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Login\Form_Login_Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Login\Form_Login_Pass.Designer.cs">
+      <DependentUpon>Form_Login_Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Login\SplashScreen_start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Login\SplashScreen_start.Designer.cs">
+      <DependentUpon>SplashScreen_start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Medical_Give.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Medical_Give.Designer.cs">
+      <DependentUpon>Form_Medical_Give.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Medical_Give_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Medical_Give_List.Designer.cs">
+      <DependentUpon>Form_Medical_Give_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Return.Designer.cs">
+      <DependentUpon>Form_Midical_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Return_Done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Return_Done.Designer.cs">
+      <DependentUpon>Form_Midical_Return_Done.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Tool_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Tool_Add.Designer.cs">
+      <DependentUpon>Form_Midical_Tool_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Tool_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Medical_tools\Form_Midical_Tool_List.Designer.cs">
+      <DependentUpon>Form_Midical_Tool_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Pocet\Form_Pocet_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Pocet\Form_Pocet_Add.Designer.cs">
+      <DependentUpon>Form_Pocet_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Receives\Form_Receive_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Receives\Form_Receive_Add.Designer.cs">
+      <DependentUpon>Form_Receive_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Receives\Form_Recive_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Receives\Form_Recive_List.Designer.cs">
+      <DependentUpon>Form_Recive_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Registered_Users_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Registered_Users_Add.Designer.cs">
+      <DependentUpon>Form_Registered_Users_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Registered_Users_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Registered_Users_List.Designer.cs">
+      <DependentUpon>Form_Registered_Users_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Search_Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Registered_Users\Form_Search_Person.Designer.cs">
+      <DependentUpon>Form_Search_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Report_Forms\Form_Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Report_Forms\Form_Doctors.Designer.cs">
+      <DependentUpon>Form_Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Report_Forms\Form_Pharmasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Report_Forms\Form_Pharmasy.Designer.cs">
+      <DependentUpon>Form_Pharmasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Representive\Form_Supp_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Representive\Form_Supp_Add.Designer.cs">
+      <DependentUpon>Form_Supp_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Representive\Form_Supp_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Representive\Form_Supp_List.Designer.cs">
+      <DependentUpon>Form_Supp_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Backup_Data.cs" />
+    <Compile Include="G_Setting\Form_Active_program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Active_program.Designer.cs">
+      <DependentUpon>Form_Active_program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_Addres_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Addres_Add.Designer.cs">
+      <DependentUpon>Form_Addres_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Backup.Designer.cs">
+      <DependentUpon>Form_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_DashBoard.Designer.cs">
+      <DependentUpon>Form_DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_Education_State_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Education_State_Add.Designer.cs">
+      <DependentUpon>Form_Education_State_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_Helth_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Helth_Add.Designer.cs">
+      <DependentUpon>Form_Helth_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_Message_wrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_Message_wrong.Designer.cs">
+      <DependentUpon>Form_Message_wrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_server_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_server_name.Designer.cs">
+      <DependentUpon>Form_server_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Setting\Form_wating_cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Setting\Form_wating_cat.Designer.cs">
+      <DependentUpon>Form_wating_cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Users\Form_User_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Users\Form_User_Add.Designer.cs">
+      <DependentUpon>Form_User_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Users\Form_User_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Users\Form_User_List.Designer.cs">
+      <DependentUpon>Form_User_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanteer_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanteer_Add.Designer.cs">
+      <DependentUpon>Form_Volanteer_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanteer_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanteer_List.Designer.cs">
+      <DependentUpon>Form_Volanteer_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanter_Subscribtion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Volanteer\Form_Volanter_Subscribtion.Designer.cs">
+      <DependentUpon>Form_Volanter_Subscribtion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Waiting\Form_Wat_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Waiting\Form_Wat_Add.Designer.cs">
+      <DependentUpon>Form_Wat_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Waiting\Form_WAT_Done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Waiting\Form_WAT_Done.Designer.cs">
+      <DependentUpon>Form_WAT_Done.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Waiting\Form_Wat_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Waiting\Form_Wat_List.Designer.cs">
+      <DependentUpon>Form_Wat_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Form_Home_panle_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Form_Home_panle_1.Designer.cs">
+      <DependentUpon>Form_Home_panle_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Location.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_S.Designer.cs">
+      <DependentUpon>login_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="New_test_baisic.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="New_test_baisic_1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registered_Users_Search.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Registered_Users_View.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Doctor_Report_3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Doctor_Report_3.Designer.cs">
+      <DependentUpon>Doctor_Report_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Pharmasy_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Pharmasy_Report.Designer.cs">
+      <DependentUpon>Pharmasy_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_cust.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_cust.Designer.cs">
+      <DependentUpon>Report_cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_Customer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_Customer.Designer.cs">
+      <DependentUpon>Report_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_Doctor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_Doctor.Designer.cs">
+      <DependentUpon>Report_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_Donation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_Donation.Designer.cs">
+      <DependentUpon>Report_Donation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_General_R1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_General_R1.Designer.cs">
+      <DependentUpon>Report_General_R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_General_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_General_Report.Designer.cs">
+      <DependentUpon>Report_General_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report_Wating_Detl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_Wating_Detl.Designer.cs">
+      <DependentUpon>Report_Wating_Detl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport3.Designer.cs">
+      <DependentUpon>XtraReport3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport4.Designer.cs">
+      <DependentUpon>XtraReport4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport_Reserch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport_Reserch.Designer.cs">
+      <DependentUpon>XtraReport_Reserch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resercher.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resercher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Supp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBE_LOC.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_AGR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_BUS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Charity_info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Committee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Course_info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Father.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Home.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Income.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Need.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Person.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Property.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUST_Resercher.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUS_Family_Member.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUS_Files.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CUS_Img.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DOC.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Doctor_Info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Donation_Dirction.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Donner_info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Educational_Status.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Emploee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Emploee_Roll.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Family_Needs_Type.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Family_Owns_Type.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_FIN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_General_report.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Health_Status.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Medical_give.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Medical_tool.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Midical_return.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PHAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Pharmasist_Info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_POC.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PUR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Rank.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Registered_Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_RES.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SELL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Social_State.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SUPP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Supscription_Moth.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Take_Course.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_User_Permitions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_volunteer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Volunteer_Subscription.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Volunteer_Type.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_WAT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_WL_CAT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Form_Loding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Form_Loding.Designer.cs">
+      <DependentUpon>Form_Loding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Message_Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Message_Box.Designer.cs">
+      <DependentUpon>Message_Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Toast_Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Toast_Del.Designer.cs">
+      <DependentUpon>Toast_Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Toast_Done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Toast_Done.Designer.cs">
+      <DependentUpon>Toast_Done.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Toast_Waring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Toast_Waring.Designer.cs">
+      <DependentUpon>Toast_Waring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toast\Toast_Wrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toast\Toast_Wrong.Designer.cs">
+      <DependentUpon>Toast_Wrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTemp_2.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_customer_main_data.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_CUST_Family.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_CUST_Main_data_01.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_CUST_Need.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_CUST_Propert.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Doctor_Info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Doctor_report.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Donation_List_New.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Donor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_emploee_list.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Emploee_login.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_General_report.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Medical_give_and_tool.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Medical_give_and_tool_2.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Medical_Give_List.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Pharmasist_Info.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Pharmasist_List.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Receive_Categroy.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Registered_Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Registered_Users_New.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Sell_to_Customers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_supp_list.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Take_Course.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_volanteer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Volunteer_Subscription.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Wating_List_List.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Whating_List_Date.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WL_Cat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WL_Cat.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="G_Category\Form_Cat_Add.resx">
+      <DependentUpon>Form_Cat_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Category\Form_Cat_List.resx">
+      <DependentUpon>Form_Cat_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Courses\Form_Courses_Add.resx">
+      <DependentUpon>Form_Courses_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Courses\Form_Courses_List.resx">
+      <DependentUpon>Form_Courses_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Courses\Form_Take_Courses_Add.resx">
+      <DependentUpon>Form_Take_Courses_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Courses\Form_Take_Course_List.resx">
+      <DependentUpon>Form_Take_Course_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cust_Add.resx">
+      <DependentUpon>Form_Cust_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Family.resx">
+      <DependentUpon>Form_Cus_Family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Father.resx">
+      <DependentUpon>Form_Cus_Father.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Files.resx">
+      <DependentUpon>Form_Cus_Files.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Home.resx">
+      <DependentUpon>Form_Cus_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Husban.resx">
+      <DependentUpon>Form_Cus_Husban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_img.resx">
+      <DependentUpon>Form_Cus_img.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Income.resx">
+      <DependentUpon>Form_Cus_Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_List.resx">
+      <DependentUpon>Form_Cus_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Needs.resx">
+      <DependentUpon>Form_Cus_Needs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Owns.resx">
+      <DependentUpon>Form_Cus_Owns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Person.resx">
+      <DependentUpon>Form_Cus_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_cus_print.resx">
+      <DependentUpon>Form_cus_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_Reserch.resx">
+      <DependentUpon>Form_Cus_Reserch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Customers\Form_Cus_View.resx">
+      <DependentUpon>Form_Cus_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Doctors\Form_Doctor_info_Add.resx">
+      <DependentUpon>Form_Doctor_info_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Doctors\Form_Parmasist_Add.resx">
+      <DependentUpon>Form_Parmasist_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Donations\Form_Donation_Add.resx">
+      <DependentUpon>Form_Donation_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Donations\Form_Donner_Add.resx">
+      <DependentUpon>Form_Donner_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_General_Report\Form_General_Report.resx">
+      <DependentUpon>Form_General_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_General_Report\Form_General_Report_List.resx">
+      <DependentUpon>Form_General_Report_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_General_Report\Form_General_Report_List_2.resx">
+      <DependentUpon>Form_General_Report_List_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Login\Form_Login_Pass.resx">
+      <DependentUpon>Form_Login_Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Login\SplashScreen_start.resx">
+      <DependentUpon>SplashScreen_start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Medical_Give.resx">
+      <DependentUpon>Form_Medical_Give.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Medical_Give_List.resx">
+      <DependentUpon>Form_Medical_Give_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Midical_Return.resx">
+      <DependentUpon>Form_Midical_Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Midical_Return_Done.resx">
+      <DependentUpon>Form_Midical_Return_Done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Midical_Tool_Add.resx">
+      <DependentUpon>Form_Midical_Tool_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Medical_tools\Form_Midical_Tool_List.resx">
+      <DependentUpon>Form_Midical_Tool_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Pocet\Form_Pocet_Add.resx">
+      <DependentUpon>Form_Pocet_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Receives\Form_Receive_Add.resx">
+      <DependentUpon>Form_Receive_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Receives\Form_Recive_List.resx">
+      <DependentUpon>Form_Recive_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Registered_Users\Form_Registered_Users_Add.resx">
+      <DependentUpon>Form_Registered_Users_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Registered_Users\Form_Registered_Users_List.resx">
+      <DependentUpon>Form_Registered_Users_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Registered_Users\Form_Search_Person.resx">
+      <DependentUpon>Form_Search_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Report_Forms\Form_Doctors.resx">
+      <DependentUpon>Form_Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Report_Forms\Form_Pharmasy.resx">
+      <DependentUpon>Form_Pharmasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Representive\Form_Supp_Add.resx">
+      <DependentUpon>Form_Supp_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Representive\Form_Supp_List.resx">
+      <DependentUpon>Form_Supp_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Active_program.resx">
+      <DependentUpon>Form_Active_program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Addres_Add.resx">
+      <DependentUpon>Form_Addres_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Backup.resx">
+      <DependentUpon>Form_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_DashBoard.resx">
+      <DependentUpon>Form_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Education_State_Add.resx">
+      <DependentUpon>Form_Education_State_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Helth_Add.resx">
+      <DependentUpon>Form_Helth_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_Message_wrong.resx">
+      <DependentUpon>Form_Message_wrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_server_name.resx">
+      <DependentUpon>Form_server_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Setting\Form_wating_cat.resx">
+      <DependentUpon>Form_wating_cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Users\Form_User_Add.resx">
+      <DependentUpon>Form_User_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Users\Form_User_List.resx">
+      <DependentUpon>Form_User_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Volanteer\Form_Volanteer_Add.resx">
+      <DependentUpon>Form_Volanteer_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Volanteer\Form_Volanteer_List.resx">
+      <DependentUpon>Form_Volanteer_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Volanteer\Form_Volanter_Subscribtion.resx">
+      <DependentUpon>Form_Volanter_Subscribtion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Waiting\Form_Wat_Add.resx">
+      <DependentUpon>Form_Wat_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Waiting\Form_WAT_Done.resx">
+      <DependentUpon>Form_WAT_Done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Waiting\Form_Wat_List.resx">
+      <DependentUpon>Form_Wat_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Form_Home_panle_1.resx">
+      <DependentUpon>Form_Home_panle_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_S.resx">
+      <DependentUpon>login_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\Doctor_Report_3.resx">
+      <DependentUpon>Doctor_Report_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Pharmasy_Report.resx">
+      <DependentUpon>Pharmasy_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_cust.resx">
+      <DependentUpon>Report_cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Customer.resx">
+      <DependentUpon>Report_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Doctor.resx">
+      <DependentUpon>Report_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Donation.resx">
+      <DependentUpon>Report_Donation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_General_R1.resx">
+      <DependentUpon>Report_General_R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_General_Report.resx">
+      <DependentUpon>Report_General_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Wating_Detl.resx">
+      <DependentUpon>Report_Wating_Detl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport3.resx">
+      <DependentUpon>XtraReport3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport4.resx">
+      <DependentUpon>XtraReport4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport_Reserch.resx">
+      <DependentUpon>XtraReport_Reserch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Form_Loding.resx">
+      <DependentUpon>Form_Loding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Message_Box.resx">
+      <DependentUpon>Message_Box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Toast_Del.resx">
+      <DependentUpon>Toast_Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Toast_Done.resx">
+      <DependentUpon>Toast_Done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Toast_Waring.resx">
+      <DependentUpon>Toast_Waring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toast\Toast_Wrong.resx">
+      <DependentUpon>Toast_Wrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Addres.xsc">
+      <DependentUpon>Addres.xsd</DependentUpon>
+    </None>
+    <None Include="Addres.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Addres.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Addres.xss">
+      <DependentUpon>Addres.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet.xsc">
+      <DependentUpon>DB_FWDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet.xss">
+      <DependentUpon>DB_FWDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet1.xsc">
+      <DependentUpon>DB_FWDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet1.xss">
+      <DependentUpon>DB_FWDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2.xsc">
+      <DependentUpon>DB_FWDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2.xss">
+      <DependentUpon>DB_FWDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2022.xsc">
+      <DependentUpon>DB_FWDDataSet2022.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2022.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2022.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2022.xss">
+      <DependentUpon>DB_FWDDataSet2022.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2023.xsc">
+      <DependentUpon>DB_FWDDataSet2023.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2023.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2023.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2023.xss">
+      <DependentUpon>DB_FWDDataSet2023.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2024.xsc">
+      <DependentUpon>DB_FWDDataSet2024.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2024.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2024.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2024.xss">
+      <DependentUpon>DB_FWDDataSet2024.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2025.xsc">
+      <DependentUpon>DB_FWDDataSet2025.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2025.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2025.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2025.xss">
+      <DependentUpon>DB_FWDDataSet2025.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2026.xsc">
+      <DependentUpon>DB_FWDDataSet2026.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2026.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2026.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2026.xss">
+      <DependentUpon>DB_FWDDataSet2026.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2027.xsc">
+      <DependentUpon>DB_FWDDataSet2027.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2027.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2027.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2027.xss">
+      <DependentUpon>DB_FWDDataSet2027.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2028.xsc">
+      <DependentUpon>DB_FWDDataSet2028.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2028.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2028.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2028.xss">
+      <DependentUpon>DB_FWDDataSet2028.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2029.xsc">
+      <DependentUpon>DB_FWDDataSet2029.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2029.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2029.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2029.xss">
+      <DependentUpon>DB_FWDDataSet2029.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2030.xsc">
+      <DependentUpon>DB_FWDDataSet2030.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2030.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2030.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2030.xss">
+      <DependentUpon>DB_FWDDataSet2030.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2031.xsc">
+      <DependentUpon>DB_FWDDataSet2031.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2031.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2031.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2031.xss">
+      <DependentUpon>DB_FWDDataSet2031.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2032.xsc">
+      <DependentUpon>DB_FWDDataSet2032.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2032.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2032.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2032.xss">
+      <DependentUpon>DB_FWDDataSet2032.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2033.xsc">
+      <DependentUpon>DB_FWDDataSet2033.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2033.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2033.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2033.xss">
+      <DependentUpon>DB_FWDDataSet2033.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2034.xsc">
+      <DependentUpon>DB_FWDDataSet2034.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2034.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2034.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2034.xss">
+      <DependentUpon>DB_FWDDataSet2034.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet20341.xsc">
+      <DependentUpon>DB_FWDDataSet20341.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet20341.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet20341.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet20341.xss">
+      <DependentUpon>DB_FWDDataSet20341.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2037.xsc">
+      <DependentUpon>DB_FWDDataSet2037.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2037.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2037.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2037.xss">
+      <DependentUpon>DB_FWDDataSet2037.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2041.xsc">
+      <DependentUpon>DB_FWDDataSet2041.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2041.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2041.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2041.xss">
+      <DependentUpon>DB_FWDDataSet2041.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2042.xsc">
+      <DependentUpon>DB_FWDDataSet2042.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2042.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2042.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2042.xss">
+      <DependentUpon>DB_FWDDataSet2042.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2044.xsc">
+      <DependentUpon>DB_FWDDataSet2044.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2044.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2044.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2044.xss">
+      <DependentUpon>DB_FWDDataSet2044.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2047.xsc">
+      <DependentUpon>DB_FWDDataSet2047.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2047.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2047.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2047.xss">
+      <DependentUpon>DB_FWDDataSet2047.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2048.xsc">
+      <DependentUpon>DB_FWDDataSet2048.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2048.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2048.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2048.xss">
+      <DependentUpon>DB_FWDDataSet2048.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2049.xsc">
+      <DependentUpon>DB_FWDDataSet2049.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2049.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2049.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2049.xss">
+      <DependentUpon>DB_FWDDataSet2049.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2050.xsc">
+      <DependentUpon>DB_FWDDataSet2050.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2050.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2050.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2050.xss">
+      <DependentUpon>DB_FWDDataSet2050.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2052.xsc">
+      <DependentUpon>DB_FWDDataSet2052.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2052.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2052.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2052.xss">
+      <DependentUpon>DB_FWDDataSet2052.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2053.xsc">
+      <DependentUpon>DB_FWDDataSet2053.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2053.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2053.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2053.xss">
+      <DependentUpon>DB_FWDDataSet2053.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2055.xsc">
+      <DependentUpon>DB_FWDDataSet2055.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2055.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2055.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2055.xss">
+      <DependentUpon>DB_FWDDataSet2055.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2056.xsc">
+      <DependentUpon>DB_FWDDataSet2056.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2056.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2056.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2056.xss">
+      <DependentUpon>DB_FWDDataSet2056.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2057.xsc">
+      <DependentUpon>DB_FWDDataSet2057.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2057.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2057.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2057.xss">
+      <DependentUpon>DB_FWDDataSet2057.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2058.xsc">
+      <DependentUpon>DB_FWDDataSet2058.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2058.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2058.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2058.xss">
+      <DependentUpon>DB_FWDDataSet2058.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2060.xsc">
+      <DependentUpon>DB_FWDDataSet2060.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2060.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2060.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2060.xss">
+      <DependentUpon>DB_FWDDataSet2060.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2062.xsc">
+      <DependentUpon>DB_FWDDataSet2062.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2062.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2062.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2062.xss">
+      <DependentUpon>DB_FWDDataSet2062.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2063.xsc">
+      <DependentUpon>DB_FWDDataSet2063.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2063.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2063.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2063.xss">
+      <DependentUpon>DB_FWDDataSet2063.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2065.xsc">
+      <DependentUpon>DB_FWDDataSet2065.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2065.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2065.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2065.xss">
+      <DependentUpon>DB_FWDDataSet2065.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2066.xsc">
+      <DependentUpon>DB_FWDDataSet2066.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2066.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2066.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2066.xss">
+      <DependentUpon>DB_FWDDataSet2066.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2080.xsc">
+      <DependentUpon>DB_FWDDataSet2080.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2080.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2080.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2080.xss">
+      <DependentUpon>DB_FWDDataSet2080.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2081.xsc">
+      <DependentUpon>DB_FWDDataSet2081.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2081.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2081.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2081.xss">
+      <DependentUpon>DB_FWDDataSet2081.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2083.xsc">
+      <DependentUpon>DB_FWDDataSet2083.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2083.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2083.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2083.xss">
+      <DependentUpon>DB_FWDDataSet2083.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2084.xsc">
+      <DependentUpon>DB_FWDDataSet2084.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2084.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2084.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2084.xss">
+      <DependentUpon>DB_FWDDataSet2084.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2086.xsc">
+      <DependentUpon>DB_FWDDataSet2086.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2086.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2086.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2086.xss">
+      <DependentUpon>DB_FWDDataSet2086.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2088.xsc">
+      <DependentUpon>DB_FWDDataSet2088.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2088.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2088.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2088.xss">
+      <DependentUpon>DB_FWDDataSet2088.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2089.xsc">
+      <DependentUpon>DB_FWDDataSet2089.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2089.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2089.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2089.xss">
+      <DependentUpon>DB_FWDDataSet2089.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2090.xsc">
+      <DependentUpon>DB_FWDDataSet2090.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2090.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2090.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2090.xss">
+      <DependentUpon>DB_FWDDataSet2090.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2093.xsc">
+      <DependentUpon>DB_FWDDataSet2093.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2093.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2093.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2093.xss">
+      <DependentUpon>DB_FWDDataSet2093.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2094.xsc">
+      <DependentUpon>DB_FWDDataSet2094.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2094.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2094.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2094.xss">
+      <DependentUpon>DB_FWDDataSet2094.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2096.xsc">
+      <DependentUpon>DB_FWDDataSet2096.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2096.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2096.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2096.xss">
+      <DependentUpon>DB_FWDDataSet2096.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2097.xsc">
+      <DependentUpon>DB_FWDDataSet2097.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2097.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2097.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2097.xss">
+      <DependentUpon>DB_FWDDataSet2097.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2098.xsc">
+      <DependentUpon>DB_FWDDataSet2098.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet2098.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet2098.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet2098.xss">
+      <DependentUpon>DB_FWDDataSet2098.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet3.xsc">
+      <DependentUpon>DB_FWDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet3.xss">
+      <DependentUpon>DB_FWDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet4.xsc">
+      <DependentUpon>DB_FWDDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet4.xss">
+      <DependentUpon>DB_FWDDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet5.xsc">
+      <DependentUpon>DB_FWDDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet5.xss">
+      <DependentUpon>DB_FWDDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet6.xsc">
+      <DependentUpon>DB_FWDDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet6.xss">
+      <DependentUpon>DB_FWDDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet7.xsc">
+      <DependentUpon>DB_FWDDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_FWDDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_FWDDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_FWDDataSet7.xss">
+      <DependentUpon>DB_FWDDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FWD_TemporaryKey.pfx" />
+    <None Include="Location.xsc">
+      <DependentUpon>Location.xsd</DependentUpon>
+    </None>
+    <None Include="Location.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Location.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Location.xss">
+      <DependentUpon>Location.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resercher.xsc">
+      <DependentUpon>Resercher.xsd</DependentUpon>
+    </None>
+    <None Include="Resercher.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Resercher.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resercher.xss">
+      <DependentUpon>Resercher.xsd</DependentUpon>
+    </None>
+    <None Include="Supp.xsc">
+      <DependentUpon>Supp.xsd</DependentUpon>
+    </None>
+    <None Include="Supp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Supp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Supp.xss">
+      <DependentUpon>Supp.xsd</DependentUpon>
+    </None>
+    <None Include="WL_Cat.xsc">
+      <DependentUpon>WL_Cat.xsd</DependentUpon>
+    </None>
+    <None Include="WL_Cat.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WL_Cat.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WL_Cat.xss">
+      <DependentUpon>WL_Cat.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_m2_0___UnK_icon.ico" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="prog-01.ico" />
+    <Content Include="Resources\CaraTexOSWallpaper.png" />
+    <Content Include="Resources\start3.bmp" />
+    <Content Include="Resources\start3.png" />
+    <Content Include="sea_wave_logo__3_-removebg-preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

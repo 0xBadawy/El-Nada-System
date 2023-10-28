@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Supp" targetNamespace="http://tempuri.org/Supp.xsd" xmlns:mstns="http://tempuri.org/Supp.xsd" xmlns="http://tempuri.org/Supp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_FWDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_FWDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FWD.Properties.Settings.GlobalReference.Default.DB_FWDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TB_SUPPTableAdapter" GeneratorDataComponentClassName="TB_SUPPTableAdapter" Name="TB_SUPP" UserDataComponentName="TB_SUPPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_FWDConnectionString (Settings)" DbObjectName="DB_FWD.dbo.TB_SUPP" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SUPP_Name FROM dbo.TB_SUPP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SUPP_Name" DataSetColumn="SUPP_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Supp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Supp" msprop:Generator_UserDSName="Supp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_SUPP" msprop:Generator_TableClassName="TB_SUPPDataTable" msprop:Generator_TableVarName="tableTB_SUPP" msprop:Generator_TablePropName="TB_SUPP" msprop:Generator_RowDeletingName="TB_SUPPRowDeleting" msprop:Generator_RowChangingName="TB_SUPPRowChanging" msprop:Generator_RowEvHandlerName="TB_SUPPRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_SUPPRowDeleted" msprop:Generator_UserTableName="TB_SUPP" msprop:Generator_RowChangedName="TB_SUPPRowChanged" msprop:Generator_RowEvArgName="TB_SUPPRowChangeEvent" msprop:Generator_RowClassName="TB_SUPPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SUPP_Name" msprop:Generator_ColumnVarNameInTable="columnSUPP_Name" msprop:Generator_ColumnPropNameInRow="SUPP_Name" msprop:Generator_ColumnPropNameInTable="SUPP_NameColumn" msprop:Generator_UserColumnName="SUPP_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

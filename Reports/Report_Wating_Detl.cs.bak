@@ -1,0 +1,21 @@
+﻿using DevExpress.XtraReports.UI;
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Drawing;
+
+namespace FWD.Reports
+{
+    public partial class Report_Wating_Detl : DevExpress.XtraReports.UI.XtraReport
+    {
+        public Report_Wating_Detl()
+        {
+            InitializeComponent();
+        }
+
+        private void Detail_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+
+        }
+    }
+}

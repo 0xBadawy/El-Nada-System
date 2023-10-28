@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bd77ebd601db4b018296fbe6efc74048" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_FWDModel.sysdiagram" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_AGR" Width="1.5" PointX="2.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_BUS" Width="1.5" PointX="10.5" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Charity_info" Width="1.5" PointX="8.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Committee" Width="1.5" PointX="6.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Course_info" Width="1.5" PointX="9.25" PointY="47" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUS_Family_Member" Width="1.5" PointX="11.25" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUS_Files" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUS_Img" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Father" Width="1.5" PointX="9.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Home" Width="1.5" PointX="6" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Income" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Need" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Person" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Property" Width="1.5" PointX="9" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_CUST_Resercher" Width="1.5" PointX="5.25" PointY="46.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_DOC" Width="1.5" PointX="8.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Doctor_Info" Width="1.5" PointX="3" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_DON" Width="1.5" PointX="5.25" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Donation_Dirction" Width="1.5" PointX="3" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Donner_info" Width="1.5" PointX="3" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Educational_Status" Width="1.5" PointX="1.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Emploee" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Emploee_Roll" Width="1.5" PointX="1.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Family_Needs_Type" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Family_Owns_Type" Width="1.5" PointX="6.75" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_FIN" Width="1.5" PointX="8.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_General_report" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Health_Status" Width="1.5" PointX="6" PointY="42.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Medical_give" Width="1.5" PointX="3" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Medical_tool" Width="1.5" PointX="0.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Midical_return" Width="1.5" PointX="5.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_PHAR" Width="1.5" PointX="5.25" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Pharmasist_Info" Width="1.5" PointX="3" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_POC" Width="1.5" PointX="8.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_PUR" Width="1.5" PointX="11.25" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Rank" Width="1.5" PointX="6" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Registered_Users" Width="1.5" PointX="8.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_RES" Width="1.5" PointX="3" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_SELL" Width="1.5" PointX="13.5" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Social_State" Width="1.5" PointX="6" PointY="53.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_SUPP" Width="1.5" PointX="3" PointY="51.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Supscription_Moth" Width="1.5" PointX="9" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Take_Course" Width="1.5" PointX="11.5" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_User_Permitions" Width="1.5" PointX="1.5" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_volunteer" Width="1.5" PointX="9" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Volunteer_Subscription" Width="1.5" PointX="11.25" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_Volunteer_Type" Width="1.5" PointX="6.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_WAT" Width="1.5" PointX="11.25" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TB_WL_CAT" Width="1.5" PointX="9" PointY="52.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.TBE_LOC" Width="1.5" PointX="0.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.New_test_baisic" Width="1.5" PointX="10.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.New_test_baisic_1" Width="1.5" PointX="12.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.Registered_Users_Search" Width="1.5" PointX="5.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.Registered_Users_View" Width="1.5" PointX="12.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_CUST_Family" Width="1.5" PointX="14.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_CUST_Main_data_01" Width="1.5" PointX="14.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_CUST_Need" Width="1.5" PointX="16.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_CUST_Propert" Width="1.5" PointX="16.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_customer_main_data" Width="1.5" PointX="16.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Doctor_Info" Width="1.5" PointX="18.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Doctor_report" Width="1.5" PointX="18.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Donation_List_New" Width="1.5" PointX="18.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Donor" Width="1.5" PointX="18.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_emploee_list" Width="1.5" PointX="13.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.view_Emploee_login" Width="1.5" PointX="18.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_General_report" Width="1.5" PointX="15.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.view_Medical_give_and_tool" Width="1.5" PointX="17.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.view_Medical_give_and_tool_2" Width="1.5" PointX="19.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Medical_Give_List" Width="1.5" PointX="20.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Pharmasist_Info" Width="1.5" PointX="20.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.view_Pharmasist_List" Width="1.5" PointX="20.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Receive_Categroy" Width="1.5" PointX="20.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Registered_Users" Width="1.5" PointX="21.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Registered_Users_New" Width="1.5" PointX="22.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Sell_to_Customers" Width="1.5" PointX="22.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_supp_list" Width="1.5" PointX="22.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Take_Course" Width="1.5" PointX="13.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.view_volanteer" Width="1.5" PointX="15.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Volunteer_Subscription" Width="1.5" PointX="17.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Wating_List_List" Width="1.5" PointX="19.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_Whating_List_Date" Width="1.5" PointX="21.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_FWDModel.ViewTemp_2" Width="1.5" PointX="23.75" PointY="17.875" IsExpanded="true" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_BUS_TB_Registered_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TB_Committee" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TB_Committee1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Take_Course_TB_Course_info" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Family_Member_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Family_Member_TB_Educational_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Family_Member_TB_Health_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Family_Member_TB_Social_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Files_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUS_Img_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Father_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Father_TB_Educational_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Father_TB_Health_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Home_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Home_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Income_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Need_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Need_TB_Family_Needs_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Person_TB_Educational_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Person_TB_Health_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Person_TB_Social_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Property_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Resercher_TB_CUST_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Property_TB_Family_Owns_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Resercher_TB_Rank" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Resercher_TB_RES" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_CUST_Resercher_TB_SUPP" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_DOC_TB_Doctor_Info" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_DOC_TB_Registered_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Doctor_Info_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_DON_TB_Donation_Dirction" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_DON_TB_Donner_info" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_DON_TB_Emploee" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Donner_info_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Donner_info_TBE_LOC1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Emploee_TB_Emploee_Roll" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Emploee_TB_User_Permitions" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_General_report_TB_Emploee" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Medical_give_TB_Emploee" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_SELL_TB_Emploee" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Registered_Users_TB_Health_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Medical_give_TB_Medical_tool" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Medical_give_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Midical_return_TB_Medical_give" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_PHAR_TB_Pharmasist_Info" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_PHAR_TB_Registered_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Pharmasist_Info_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_SELL_TB_PUR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Registered_Users_TB_Rank" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Registered_Users_TB_Social_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Registered_Users_TB_SUPP" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Registered_Users_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_SELL_TB_Registered_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Take_Course_TB_Registered_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_RES_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TB_Social_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_SUPP_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_SUPP_TBE_LOC1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_WAT_TB_SUPP" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Volunteer_Subscription_TB_Supscription_Moth" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_Volunteer_Subscription_TB_volunteer" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TB_Volunteer_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TBE_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_volunteer_TBE_LOC1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_WAT_TB_WL_CAT" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_FWDModel.FK_TB_WAT_TBE_LOC" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DB_FWDModel.View_reserchers2" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
